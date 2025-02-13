@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		<style type="text/css">
+			body{
+				background-image:url("https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHJvYWR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				padding-left:40em;
+				font-family: Georgia, "Times New Roman",
+				Times, serif;
+			}
+			#page-wrap {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.Pocetna_strana {
+				position:absolute;
+				top:0em;
+				left:0em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0em;				
+			}
+			.O_kompaniji {
+				position:absolute;
+				top:0em;
+				left:13.71em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Proizvodi {
+				position:absolute;
+				top:0em;
+				left:27.42em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	  
+			.O_nama {
+				position:absolute;
+				top:0em;
+				left:41.13em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}
+			.Karijere {
+				position:absolute;
+				top:0em;
+				left:54.84em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Kontakt {
+				position:absolute;
+				top:0em;
+				left:68.55em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em; 
+			}
+			.Demo {
+				position:absolute;
+				top:0em;
+				left:82.26em;
+				width:13.75em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0em 0.5em; 
+			}
+			ul {
+				list-style-type: none;
+			}
+			a:link {
+				text-decoration: none;
+				color:black
+			}
+			a:visited {
+				text-decoration: none;
+				color:black
+			}
+			a:hover {
+				text-decoration: underline;
+				color:red;
+			}
+			.Logo{
+				position:absolute;
+				top:2.15em;
+				left:0em;					
+				border-radius:0em 0.5em 0.5em 0em; 
+			}
+			p1 {
+				position:absolute;
+				top:20em;
+				left:15em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			.RSD{
+				position:absolute;
+				top:14em;
+				left:43em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( green , white);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			.USD{
+				position:absolute;
+				top:18em;
+				left:43em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( green , white);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			.EUR{
+				position:absolute;
+				top:22em;
+				left:43em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( green , white);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			.CAD{
+				position:absolute;
+				top:26em;
+				left:43em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( green , white);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			.AUD{
+				position:absolute;
+				top:30em;
+				left:43em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( green , white);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			p2{
+				position:absolute;
+				top:4em;
+				left:10em;
+				width:30em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p3{
+				position:absolute;
+				top:14em;
+				left:55em;
+				width:5em;
+				height: 2.3em;
+				line-height: 2.3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p4{
+				position:absolute;
+				top:18em;
+				left:55em;
+				width:5em;
+				height: 2.3em;
+				line-height: 2.3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p5{
+				position:absolute;
+				top:22em;
+				left:55em;
+				width:5em;
+				height: 2.3em;
+				line-height: 2.3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p6{
+				position:absolute;
+				top:26em;
+				left:55em;
+				width:5em;
+				height: 2.3em;
+				line-height: 2.3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p7{
+				position:absolute;
+				top:30em;
+				left:55em;
+				width:5em;
+				height: 2.3em;
+				line-height: 2.3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			p8{
+				position:absolute;
+				top:1.5em;
+				left:16.5em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			.RSD1{
+				position:absolute;
+				top:14.1em;
+				left:38em;			
+				width:3em;
+				height: 2em; 
+			}
+			.USD1{
+				position:absolute;
+				top:18.1em;
+				left:38em;			
+				width:3em;
+				height: 2em; 
+			}
+			.EUR1{
+				position:absolute;
+				top:22.1em;
+				left:38em;			
+				width:3em;
+				height: 2em; 
+			}
+			.CAD1{
+				position:absolute;
+				top:26.1em;
+				left:38em;			
+				width:3em;
+				height: 2em; 
+			}
+			.AUD1{
+				position:absolute;
+				top:30.1em;
+				left:38em;			
+				width:3em;
+				height: 2em; 
+			}
+		</style>
+	</head>
+	<body>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Serbia_%282004%E2%80%932010%29.svg/240px-Flag_of_Serbia_%282004%E2%80%932010%29.svg.png" 
+		class="RSD1">
+		<img src="https://www.merchantstronghold.com/currency/wp-content/uploads/2017/05/usd-1.png" 
+		class="USD1">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png" 
+		class="EUR1">
+		<img src="https://www.countryflags.com/wp-content/uploads/canada-flag-png-large.png" 
+		class="CAD1">
+		<img src="https://flagpedia.net/data/flags/w1600/au.png" 
+		class="AUD1">
+		<form>
+			<input type="number" min="0" id="RSD"  value="0" onchange="RSD_1()" class="RSD" ></input></br>
+			<input type="number" min="0" id="USD"  value="0" onchange="USD_1()"class="USD" ></input></br>
+			<input type="number" min="0" id="EUR"  value="0" onchange="EUR_1()" class="EUR" ></input></br>
+			<input type="number" min="0" id="CAD"  value="0" onchange="CAD_1()"class="CAD" ></input></br>
+			<input type="number" min="0" id="AUD"  value="0" onchange="AUD_1()" class="AUD" ></input></br>
+		</form>
+		<img src="Logo.jpg" 
+		name="Logo" class="Logo" height="80" width="150"
+			onmouseover="Logo.width='300';Logo.height='200';" onmouseout="Logo.width='150';Logo.height='80';">
+		<p1>Stefan Stajic 4447 (online student)</p1>
+		<p2>Ovde mozete konvertovati valutu koju imate u dinare ili evre</p2>
+		<p3>RSD</p3>
+		<p4>USD</p4>
+		<p5>EUR</p5>
+		<p6>CAD</p6>
+		<p7>AUD</p7>
+		<p8>Primamo samo dinare ili evre !!!</p8>
+		<header>
+			<div class="nav">
+				<ul>
+					<li class="Pocetna_strana"><a href="Pocetna_strana.html">Pocetna strana</a></li>
+					<li class="O_kompaniji"><a href="O_kompaniji.html">O kompaniji</a></li>
+					<li class="Proizvodi"><a href="Proizvodi.html">Automobili</a></li>
+					<li class="O_nama"><a href="O_nama.html">O nama</a></li>
+					<li class="Karijere"><a href="Karijere.html">Prijava</a></li>
+					<li class="Kontakt"><a href="Kontakt.html">Kontakt</a></li>
+					<li class="Demo"><a href="Demo.html">Konverzija </a></li>
+				</ul>
+			</div>
+		</header>
+		<script>
+			var RSD, USD, EUR, CAD, AUD;
+			function Sve(){
+				RSD = document.getElementById("RSD");
+				USD = document.getElementById("USD");
+				EUR = document.getElementById("EUR");
+				CAD = document.getElementById("CAD");
+				AUD = document.getElementById("AUD");
+			}
+			function RSD_1(){
+				USD.value = parseFloat(RSD.value) * 0.0094;
+				EUR.value = parseFloat(RSD.value) * 0.0077;
+				CAD.value = parseFloat(RSD.value) * 0.012;
+				AUD.value = parseFloat(RSD.value) * 0.012;
+			}
+			function EUR_1(){
+				RSD.value = parseFloat(EUR.value) * 118.53;
+				USD.value = parseFloat(EUR.value) * 0.82;
+				CAD.value = parseFloat(EUR.value) * 0.65;
+				AUD.value = parseFloat(EUR.value) * 0.64;
+			}
+			function CAD_1(){
+				RSD.value = parseFloat(CAD.value) * 77.00;
+				USD.value = parseFloat(CAD.value) * 1.27;
+				EUR.value = parseFloat(CAD.value) * 1.54;
+				AUD.value = parseFloat(CAD.value) * 0.98;
+			}
+			function AUD_1(){
+				RSD.value = parseFloat(AUD.value) * 75,59;
+				USD.value = parseFloat(AUD.value) * 1.29;
+				EUR.value = parseFloat(AUD.value) * 1.57;
+				CAD.value = parseFloat(AUD.value) * 1.02;    
+			}
+			function USD_1(){
+				RSD.value = parseFloat(USD.value) * 97.40;
+				EUR.value = parseFloat(USD.value) * 1.22;
+				CAD.value = parseFloat(USD.value) * 0.79;
+				AUD.value = parseFloat(USD.value) * 0.78;
+			}
+			Sve();
+		</script>
+	</body>
+</html>

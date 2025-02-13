@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proizvodi</title>
+		<style type="text/css">
+			body{
+				background-image:url("https://images.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				padding-left:40em;
+				font-family: Georgia, "Times New Roman",
+				Times, serif;
+			}
+			#page-wrap {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.Pocetna_strana {
+				position:absolute;
+				top:0em;
+				left:0em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0em;				
+			}
+			.O_kompaniji {
+				position:absolute;
+				top:0em;
+				left:13.71em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Proizvodi {
+				position:absolute;
+				top:0em;
+				left:27.42em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	  
+			.O_nama {
+				position:absolute;
+				top:0em;
+				left:41.13em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}
+			.Karijere {
+				position:absolute;
+				top:0em;
+				left:54.84em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Kontakt {
+				position:absolute;
+				top:0em;
+				left:68.55em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em; 
+			}
+			.Demo {
+				position:absolute;
+				top:0em;
+				left:82.26em;
+				width:13.75em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0em 0.5em; 
+			}
+			ul {
+				list-style-type: none;
+			}
+			a:link {
+				text-decoration: none;
+				color:black
+			}
+			a:visited {
+				text-decoration: none;
+				color:black
+			}
+			a:hover {
+				text-decoration: underline;
+				color:red;
+			}
+			.Logo{
+				position:absolute;
+				top:2.15em;
+				left:0em;					
+				border-radius:0em 0.5em 0.5em 0em; 
+			}
+			p {
+				position:absolute;
+				top:1em;
+				left:10em;
+				width:29em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, black, #0000b3);;
+				border-radius:1em 1em 1em 1em; 
+				color:white;
+			}
+			p1 {
+				position:absolute;
+				top:20em;
+				left:14em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, black, #0000b3);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+			}
+			.Dugme {
+				position: absolute;
+				background-image: linear-gradient( #0000b3 , black);;
+				top:15em;
+				left:0em;
+				width:12em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;
+				border: none;
+				color:white;
+				border-radius:0em 1em 0em 0em;
+				border:none;
+				
+			}	
+			.Prva {
+				position: apsolute;
+				display: block;
+
+			}
+			.Lista {
+				display: none;
+				position: absolute;
+				background-image: linear-gradient( black, #0000b3);;
+				top:17em;
+				left:0em;
+				width:12em;
+				height: 8em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;
+				border-radius:0em 0em 1em 0em;
+			}
+			.Lista a {
+				color:white;
+				text-decoration: none;
+				display: block;				
+			}
+			.Prva:hover .Lista {
+				display: block;
+			}
+			.Mercedes_GLC {
+				position:absolute;
+				top:15em;
+				left:55em;
+				width:27em;
+				height: 12em;
+				background-size:30em 20em;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				text-align:center;
+			}
+			p2{
+				position:absolute;
+				top:27em;
+				left:55em;
+				width:27em;
+				height: 5em;
+				line-height: 5em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( black, #0000b3);;
+				border-radius:0em 0em 1em 1em; 
+				color:white;
+			}
+			p3{
+				position:absolute;
+				top:12em;
+				left:55em;
+				width:27em;
+				height: 3em;
+				line-height: 3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient(#0000b3, black );;
+				border-radius:1em 1em 0em 0em; 
+				color:white;
+			}
+			.Odaberi_1{
+				position:absolute;
+				top:32em;
+				left:63em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient(to bottom right, red, black );;
+				border-radius:0em 0em 1em 1em; 
+				color:white;
+				border:none;
+				cursor:pointer;
+			}
+			.Mercedes_GLE {
+				position:absolute;
+				top:15em;
+				left:15em;
+				width:27em;
+				height: 12em;
+				background-size:30em 20em;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				text-align:center;
+			}
+			p4{
+				position:absolute;
+				top:27em;
+				left:15em;
+				width:27em;
+				height: 5em;
+				line-height: 5em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient( black, #0000b3);;
+				border-radius:0em 0em 1em 1em; 
+				color:white;
+			}
+			p5{
+				position:absolute;
+				top:12em;
+				left:15em;
+				width:27em;
+				height: 3em;
+				line-height: 3em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient(#0000b3, black );;
+				border-radius:1em 1em 0em 0em; 
+				color:white;
+			}
+			.Odaberi_2{
+				position:absolute;
+				top:32em;
+				left:23em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			
+				background-image: linear-gradient(to bottom right, red, black );;
+				border-radius:0em 0em 1em 1em; 
+				color:white;
+				border:none;
+				cursor:pointer;
+			}
+			.Vracanje_nazad{
+				position:absolute;
+				top:11em;
+				left:53em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				border:none;
+				text-align:center;			
+				background-image: linear-gradient(red, red);;
+				border-radius:1em 1em 1em 1em; 
+				color:white;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>	
+		<img class="Mercedes_GLC" src="https://cdn.hipwallpaper.com/i/21/42/YoWiOm.jpg">
+		<img class="Mercedes_GLC" src="https://www.carwiz.rs/data/public/automobili/mercedes-glc-carwiz-rent-a-car-rs.png">
+		<img class="Mercedes_GLE" src="https://cdn.hipwallpaper.com/i/21/42/YoWiOm.jpg">
+		<img class="Mercedes_GLE" src="https://www.carwiz.rs/data/public/automobili/mercedes-gle-carwiz-rent-a-car-rs.png">
+		<p>Ovde se nalaze dostupni luksuzni automobili po opadajocoj ceni</p>
+		<p1>Stefan Stajic 4447 (online student)</p1>
+		<p2><span style=" font-weight:bold">Po ceni vec od </span><span style="color:#ffff00; font-weight:bold;"> 55,99</span><span  style="color:red; font-weight:bold;">EUR </span><span style="font-weight:bold;"> - </span><span style="color:#ffff00; font-weight:bold;"> 6639,99</span><span style="color:red; font-weight:bold;">RSD </span></p2>
+		<p3><span style=" font-weight:bold">Mercedes GLC 4x4</span></p3>
+		<p4><span style=" font-weight:bold">Po ceni vec od </span><span style="color:#ffff00; font-weight:bold;"> 135,19</span><span  style="color:red; font-weight:bold;">EUR </span><span style="font-weight:bold;"> - </span><span style="color:#ffff00; font-weight:bold;"> 16032,51</span><span style="color:red; font-weight:bold;">RSD </span></p4>
+		<p5><span style=" font-weight:bold">Mercedes GLE 4x4</span></p5>
+		<button onclick="location.href='Prikaz_1.html'" class="Odaberi_1">Odaberi</button>
+		<button onclick="location.href='Prikaz_2.html'" class="Odaberi_2">Odaberi</button>
+		<button onclick="location.href='Proizvodi.html'" class="Vracanje_nazad">Vrati me nazad</button>
+			<header>
+			<div class="nav">
+				<ul>
+					<li class="Pocetna_strana"><a href="Pocetna_strana.html">Pocetna strana</a></li>
+					<li class="O_kompaniji"><a href="O_kompaniji.html">O kompaniji</a></li>
+					<li class="Proizvodi"><a href="Proizvodi.html">Automobili</a></li>
+					<li class="O_nama"><a href="O_nama.html">O nama</a></li>
+					<li class="Karijere"><a href="Karijere.html">Prijava</a></li>
+					<li class="Kontakt"><a href="Kontakt.html">Kontakt</a></li>
+					<li class="Demo"><a href="Demo.html">Konverzija </a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="Prva">
+			<button class="Dugme">Filter</button>
+			<div class="Lista">
+				<a href="Mali_potrosaci.html">Mali potrosaci</a>
+				<a href="Luksuzni.html">Luksuzni automobili</a>
+				<a href="Normalni.html">Normalni automobili</a>
+				<a href="Kombi_vozila.html">Kombi vozila</a>
+			</div>
+		</div>
+		<img src="Logo.jpg" 
+		name="Logo" class="Logo" height="80" width="150"
+			onmouseover="Logo.width='300';Logo.height='200';" onmouseout="Logo.width='150';Logo.height='80';">
+	</body>
+</html>

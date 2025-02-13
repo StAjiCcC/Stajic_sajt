@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proizvodi</title>
+		<style type="text/css">
+			body{
+				background-image:url("https://cdn.hipwallpaper.com/i/21/42/YoWiOm.jpg");
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				padding-left:40em;
+				font-family: Georgia, "Times New Roman",
+				Times, serif;
+			}
+			.Pocetna_strana {
+				position:absolute;
+				top:0em;
+				left:0em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0em;				
+			}
+			.O_kompaniji {
+				position:absolute;
+				top:0em;
+				left:13.71em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Proizvodi {
+				position:absolute;
+				top:0em;
+				left:27.42em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	  
+			.O_nama {
+				position:absolute;
+				top:0em;
+				left:41.13em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}
+			.Karijere {
+				position:absolute;
+				top:0em;
+				left:54.84em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Kontakt {
+				position:absolute;
+				top:0em;
+				left:68.55em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em; 
+			}
+			.Demo {
+				position:absolute;
+				top:0em;
+				left:82.26em;
+				width:13.75em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0em 0.5em; 
+			}
+			ul {
+				list-style-type: none;
+			}
+			a:link {
+				text-decoration: none;
+				color:black
+			}
+			a:visited {
+				text-decoration: none;
+				color:black
+			}
+			a:hover {
+				text-decoration: underline;
+				color:red;
+			}
+			.Logo{
+				position:absolute;
+				top:2.15em;
+				left:0em;					
+				border-radius:0em 0.5em 0.5em 0em; 
+			}
+			.Ime{
+				position:absolute;
+				top:20em;
+				left:20em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			.Prezime{
+				position:absolute;
+				top:24em;
+				left:20em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			.Fajl{
+				position:absolute;
+				top:28em;
+				left:20em;
+				width:20em;
+				height: 2.2em;
+				line-height: 2.2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			::placeholder {
+				color:black;
+				opacity:1;
+			}
+
+			:-ms-input-placeholder {
+				color:black;
+			}
+
+			::-ms-input-placeholder { 
+				color:black;
+			}
+			
+			p1{
+				position:absolute;
+				top:25em;
+				left:16em;
+				width:17em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to right, #2e2e1f , white);;
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			p2{
+				position:absolute;
+				top:35em;
+				left:7em;
+				width:80em;
+				height: 10em;		
+				background-image: linear-gradient(white, #2e2e1f);;
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			.Mesto_uzimanja{
+				position:absolute;
+				top:44em;
+				left:16em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			input::placeholder{
+				color:white;
+			}
+			.Mesto_vracanja{
+				position:absolute;
+				top:50em;
+				left:16em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Datum_uzimanja{
+				position:absolute;
+				top:44em;
+				left:45em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Datum_vracanja{
+				position:absolute;
+				top:50em;
+				left:45em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Vreme_uzimanja{
+				position:absolute;
+				top:44em;
+				left:70em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Vreme_vracanja{
+				position:absolute;
+				top:50em;
+				left:70em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				background-image: linear-gradient( red , black);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Vracanje_nazad{
+				position:absolute;
+				top:38em;
+				left:10em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				border:none;
+				text-align:center;			
+				background-image: linear-gradient(red, red);;
+				border-radius:1em 1em 1em 1em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Rezervisi{
+				position:absolute;
+				top:47em;
+				left:90em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				border:none;
+				text-align:center;			
+				background-image: linear-gradient(red, red);;
+				border-radius:1em 1em 1em 1em; 
+				color:white;
+				cursor:pointer;
+			}
+			.Audi_A3_limousine {
+				position:absolute;
+				top:20em;
+				left:30em;
+				background-size:30em 20em;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				text-align:center;
+			}
+			p3{
+				position:absolute;
+				top:35.4em;
+				left:40em;
+				font-size:1em;			
+				color:black;
+			}
+			p4{
+				position:absolute;
+				top:40.4em;
+				left:40em;
+				font-size:1em;			
+				color:white;
+			}
+			p5{
+				position:absolute;
+				top:35.4em;
+				left:59em;
+				font-size:1em;			
+				color:black;
+			}
+			p6{
+				position:absolute;
+				top:40.4em;
+				left:59em;
+				font-size:1em;			
+				color:white;
+			}
+			p7{
+				position:absolute;
+				top:35.4em;
+				left:16.5em;
+				font-size:1em;			
+				color:black;
+			}
+			p8{
+				position:absolute;
+				top:40.4em;
+				left:16.5em;
+				font-size:1em;			
+				color:white;
+			}
+			p9{
+				position:absolute;
+				top:7em;
+				left:30em;
+				width:35em;
+				height: 10.5em;		
+				background-image: linear-gradient( #2e2e1f , white);;
+				border-radius:1em 1em 1em 1em; 
+			}
+			p10{
+				position:absolute;
+				top:7.5em;
+				left:35em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p11{
+				position:absolute;
+				top:10em;
+				left:35em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p12{
+				position:absolute;
+				top:12.5em;
+				left:35em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p13{
+				position:absolute;
+				top:15em;
+				left:35em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p14{
+				position:absolute;
+				top:7.5em;
+				left:50em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p15{
+				position:absolute;
+				top:12.5em;
+				left:48.5em;
+				font-size:1em;
+				width:13em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p17{
+				position:absolute;
+				top:10em;
+				left:50em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			.Broj{
+				position:absolute;
+				top:15em;
+				left:48.5em;
+				font-size:1em;
+				width:13em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			ul {
+				list-style-type: none;
+			}
+			a:link {
+				text-decoration: none;
+				color:white
+			}
+			a:visited {
+				text-decoration: none;
+				color:white
+			}
+			a:hover {
+				text-decoration: underline;
+				color:red;
+			}
+			p18{
+				position:absolute;
+				top:1.2em;
+				left:16.8em;
+				font-size:2em;
+				width:14em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( #2e2e1f , black);;
+				border-radius:1em 1em 1em 1em;				
+				color:white;
+			}
+			p19{
+				position:absolute;
+				top:39em;
+				left:71.5em;
+				font-size:1em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				color:white;
+			}
+			p20{
+				position:absolute;
+				top:17.5em;
+				left:35em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( white , black);;
+				border-radius:0em 0em 1em 1em;				
+				color:black;
+			}
+			p21{
+				position:absolute;
+				top:17.5em;
+				left:50em;
+				font-size:1em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				background-image: linear-gradient( white , black);;
+				border-radius:0em 0em 1em 1em;				
+				color:black;
+			}
+			.Provera{
+				position:absolute;
+				top:44em;
+				left:88.5em;
+				width:13em;
+				height: 2em;
+				line-height: 2em;
+				border:none;
+				text-align:center;			
+				background-image: linear-gradient(red, red);;
+				border-radius:1em 1em 1em 1em; 
+				color:white;
+				cursor:pointer;
+			}
+		</style>
+	</head>	
+	<body>
+		<p1>Stefan Stajic 4447 (online student)</p1>
+		<p2></p2>
+		<p3>Datum uzimanja</p3>
+		<p4>Datum vracanja</p4>
+		<p5>Vreme uzimanja</p5>
+		<p6>Vreme vracanja</p6>
+		<p7>Mesto uzimanja</p7>
+		<p8>Mesto vracanja</p8>
+		<p9></p9>
+		<p10>Automatik</p10>
+		<p11>cetri vrata</p11>
+		<p12>Pet putnika</p12>
+		<p13>A/C</p13>
+		<p14>CDW/TP</p14>
+		<p15>Neogranicena kilometraza</p15>
+		<p17>PDV 20%</p17>
+		<p18>Audi A3 limousine automatic</p18>
+		<p19><span style=" font-weight:bold"><br>Po danu</br> </span><span style="color:#ffff00; font-weight:bold;"> 30,75</span><span  style="color:red; font-weight:bold;">EUR </span><span style="font-weight:bold;"> - </span><span style="color:#ffff00; font-weight:bold;"> 3646,72</span><span style="color:red; font-weight:bold;">RSD </span></p19>
+		<p20>Informacije o vozilu</p20>
+		<p21>Cena ukljucuje</p21>
+		<form name="Sve" id="Sve">
+			<input type="text" name="Mesto_uzimanja" placeholder="Odaberite" id="Mesto_uzimanja" class="Mesto_uzimanja"/><br>
+			<input type="text" name="Mesto_vracanja" placeholder="Odaberite" id="Mesto_vracanja" class="Mesto_vracanja"/><br>
+			<input type="date" name="Datum_uzimanja" placeholder="Datum uzimanja" id="Datum_uzimanja" class="Datum_uzimanja"/><br>
+			<input type="date" name="Datum_vracanja" placeholder="Datum vracanja" id="Datum_vracanja" class="Datum_vracanja"/><br>
+			<input type="time" name="Vreme_uzimanja" placeholder="Vreme uzimanja" id="Vreme_uzimanja" class="Vreme_uzimanja"/><br>
+			<input type="time" name="Vreme_vracanja" placeholder="Vreme vracanja" id="Vreme_vracanja" class="Vreme_vracanja"/><br>
+		</form>
+		<button name="Provera" onclick="Provera()" class="Provera">Provera tacnosti unosta</button>
+		<button onclick="location.href='Proizvodi.html'" class="Vracanje_nazad">Vrati me nazad</button>
+		<button onclick="location.href='Podaci.html'" class="Rezervisi">Rezervisi</button>
+		<img src="https://www.carwiz.rs/data/public/automobili/audi-a3-limousine-carwiz-rent-a-car-serbia.png"
+		class="Audi_A3_limousine" name="Audi_A3_limousine" width="600" height="240"
+		onmouseover="Audi_A3_limousine.width='1000';Audi_A3_limousine.height='400';" onmouseout="Audi_A3_limousine.width='580';Audi_A3_limousine.height='240';">
+		<img src="Logo.jpg" 
+		name="Logo" class="Logo" height="80" width="150"
+			onmouseover="Logo.width='300';Logo.height='200';" onmouseout="Logo.width='150';Logo.height='80';">
+		<header>
+			<div class="nav">
+				<ul>
+					<li class="Pocetna_strana"><a href="Pocetna_strana.html">Pocetna strana</a></li>
+					<li class="O_kompaniji"><a href="O_kompaniji.html">O kompaniji</a></li>
+					<li class="Proizvodi"><a href="Proizvodi.html">Automobili</a></li>
+					<li class="O_nama"><a href="O_nama.html">O nama</a></li>
+					<li class="Karijere"><a href="Karijere.html">Prijava</a></li>
+					<li class="Kontakt"><a href="Kontakt.html">Kontakt</a></li>
+					<li class="Demo"><a href="Demo.html">Konverzija </a></li>
+					<li class="Broj"><a href="tel:064-111-4444">>> Otkazivanje rezervacije</a></li>
+				</ul>
+			</div>
+		</header>	
+		<script>
+		function Provera() {
+				var Mesto_uzimanja=document.Sve.Mesto_uzimanja.value;
+				var Mesto_vracanja=document.Sve.Mesto_vracanja.value;
+				var Datum_uzimanja=document.Sve.Datum_uzimanja.value;
+				var Datum_vracanja=document.Sve.Datum_vracanja.value;
+				var Vreme_uzimanja=document.Sve.Vreme_uzimanja.value;
+				var Vreme_vracanja=document.Sve.Vreme_vracanja.value;
+				var x = window.location.href;
+				if(Mesto_uzimanja  == null || Mesto_uzimanja== "" ) {
+					alert( "Doslo je do greske u mestu uzimanja" );
+					return false;
+				}
+				else if(Mesto_vracanja  == null || Mesto_vracanja== "" ) {
+					alert( "Doslo je do greske u mestu vracanja" );
+					return false;
+				}
+				else if(Datum_uzimanja  == null || Datum_uzimanja== "" ) {
+					alert( "Doslo je do greske u datumu uzimanja" );
+					return false;
+				}
+				else if(Datum_vracanja  == null || Datum_vracanja== "" ) {
+					alert( "Doslo je do greske u datumu vracanja" );
+					return false;
+				}
+				else if(Vreme_uzimanja  == null || Vreme_uzimanja== "" ) {
+					alert( "Doslo je do greske u vremenu uzimanja" );
+					return false;
+				}
+				else if(Vreme_vracanja  == null || Vreme_vracanja== "" ) {
+					alert( "Doslo je do greske u Vremenu vracanja" );
+					return false;
+				}
+				else {
+					alert( "Uspesno ste poslali podatke" );
+					
+				}
+			}
+		</script>
+	</body>
+</html>

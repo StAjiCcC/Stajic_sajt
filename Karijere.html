@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Karijere</title>
+		<style type="text/css">
+			body{
+				background-image:url("https://i.pinimg.com/originals/67/5e/a9/675ea9cb0b0fecfb30de0f01fc06ac2f.jpg");
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				padding-left:40em;
+				font-family: Georgia, "Times New Roman",
+				Times, serif;
+			}
+			#page-wrap {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.Pocetna_strana {
+				position:absolute;
+				top:0em;
+				left:0em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0em;				
+			}
+			.O_kompaniji {
+				position:absolute;
+				top:0em;
+				left:13.71em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Proizvodi {
+				position:absolute;
+				top:0em;
+				left:27.42em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	  
+			.O_nama {
+				position:absolute;
+				top:0em;
+				left:41.13em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}
+			.Karijere {
+				position:absolute;
+				top:0em;
+				left:54.84em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em;
+			}	
+			.Kontakt {
+				position:absolute;
+				top:0em;
+				left:68.55em;
+				width:13.71em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0.5em 0.5em; 
+			}
+			.Demo {
+				position:absolute;
+				top:0em;
+				left:82.26em;
+				width:13.75em;
+				height: 2em;
+				text-align:center;
+				background-image: linear-gradient(white, red);
+				border-radius:0em 0em 0em 0.5em; 
+			}
+			ul {
+				list-style-type: none;
+			}
+			a:link {
+				text-decoration: none;
+				color:black
+			}
+			a:visited {
+				text-decoration: none;
+				color:black
+			}
+			a:hover {
+				text-decoration: underline;
+				color:red;
+			}
+			.Logo{
+				position:absolute;
+				top:2.15em;
+				left:0em;					
+				border-radius:0em 0.5em 0.5em 0em; 
+			}
+			.Ime{
+				position:absolute;
+				top:20em;
+				left:20em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			.Prezime{
+				position:absolute;
+				top:24em;
+				left:20em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			.Fajl{
+				position:absolute;
+				top:28em;
+				left:20em;
+				width:20em;
+				height: 2.2em;
+				line-height: 2.2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, #800080, white);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+			}
+			::placeholder {
+				color:black;
+				opacity:1;
+			}
+
+			:-ms-input-placeholder {
+				color:black;
+			}
+
+			::-ms-input-placeholder { 
+				color:black;
+			}
+			.Posalji{
+				position:absolute;
+				top:31em;
+				left:25em;
+				width:10em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;			
+				 background-image: linear-gradient(to bottom right, white, #800080);
+				border-radius:1em 1em 1em 1em; 
+				color:black;
+				cursor:pointer;
+			}
+			p1{
+				position:absolute;
+				top:30em;
+				left:30em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:1em;			 
+				color:black;
+			}
+			p2 {
+				position:absolute;
+				top:20em;
+				left:12em;
+				width:20em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, white, #800080);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			p3 {
+				position:absolute;
+				top:5em;
+				left:25em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, white, #800080);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			p4 {
+				position:absolute;
+				top:8em;
+				left:25em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, white, #800080);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			p5 {
+				position:absolute;
+				top:11em;
+				left:25em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, white, #800080);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+			p6 {
+				position:absolute;
+				top:14em;
+				left:25em;
+				width:15em;
+				height: 2em;
+				line-height: 2em;
+				text-align:center;
+				font-size:2em;			
+				background-image: linear-gradient(to bottom right, white, #800080);;
+				border-radius:0.5em 0.5em 0.5em 0.5em; 
+				color:black;
+			}
+		</style>
+		<form name="Sve" id="Sve">
+			<input name="Ime" id="Ime" type="text"  placeholder="Ime" class="Ime"/><br>
+			<input name="Prezime" id="Prezime" type="text"  placeholder="Prezime" class="Prezime"/><br>
+			<input id="Fajl" type="file" placeholder="Fajl" class="Fajl"/><br>
+		</form>	
+		<button name="posalji" id="Posalji" onclick="Posalji()" class="Posalji">Posalji</button>
+	</head>
+	<body>
+		<img src="Logo.jpg" 
+		name="Logo" class="Logo" height="80" width="150"
+			onmouseover="Logo.width='300';Logo.height='200';" onmouseout="Logo.width='150';Logo.height='80';">
+		<header>
+			<div class="nav">
+				<ul>
+					<li class="Pocetna_strana"><a href="Pocetna_strana.html">Pocetna strana</a></li>
+					<li class="O_kompaniji"><a href="O_kompaniji.html">O kompaniji</a></li>
+					<li class="Proizvodi"><a href="Proizvodi.html">Automobili</a></li>
+					<li class="O_nama"><a href="O_nama.html">O nama</a></li>
+					<li class="Karijere"><a href="Karijere.html">Prijava</a></li>
+					<li class="Kontakt"><a href="Kontakt.html">Kontakt</a></li>
+					<li class="Demo"><a href="Demo.html">Konverzija </a></li>
+				</ul>
+			</div>
+		</header>
+		<p1 id="Jedan" ></p1>
+		<p2>Stefan Stajic 4447 (online student)</p2>
+		<p3>Trazi se sekretarica !</p3>
+		<p4>Trazi se knjigovodja !</p4>
+		<p5>Trazi se komercijalista !</p5>
+		<p6>Trazi se finansijsli operater !</p6>
+		<script>
+			function Posalji() {
+				var Ime=document.Sve.Ime.value;
+				var Prezime=document.Sve.Prezime.value;
+				var Fajl=document.Sve.Fajl.value;
+				if(Ime  == null || Ime== "" ) {
+				alert( "Doslo je do greske u imenu" );
+				return false;
+				}
+				else if(Prezime  == null || Prezime== "" ) {
+				alert( "Doslo je do greske u prezimenu" );
+				return false;
+				}
+				else if(Fajl  == null || Fajl== "" ) {
+				alert( "Doslo je do greske u fajlu" );
+				return false;
+				}
+				else {
+				alert( "Uspesno ste poslali podatke" );
+				}
+			}
+		</script>
+	</body>
+</html>
